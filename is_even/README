@@ -1,0 +1,14 @@
+What is this:
+	- Function "Is x even?"
+
+The bug:
+	- Bad math
+
+The debug:
+15c15
+< 	return (x % 2);
+---
+> 	return (x % 2 == 0);
+
+Remarks:
+	- Easy warmup -> Level1

@@ -1,0 +1,15 @@
+What is this:
+	- Program which capitalize the first argument
+
+The bug:
+	- Infinity loop, i is not iterated
+
+The debug:
+35a36
+> 	{
+37a39,40
+> 		++i;
+> 	}
+
+Remarks:
+	- Simple but 4 functions to check and easy to miss so I'm putting -> Level2

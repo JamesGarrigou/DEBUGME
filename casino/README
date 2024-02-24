@@ -1,0 +1,15 @@
+What is this:
+	- Solution to an algorithmic problem
+	Link here: https://codeforces.com/contest/1929/problem/C
+
+The bug:
+	- Typo error, 'pritnf' instead of 'printf'
+
+The debug:
+129c129
+< 			pritnf("NO\n");
+---
+> 			printf("NO\n");
+
+Remarks:
+	- The hint "Compilation error" in the comments makes the debug really easy -> Level1

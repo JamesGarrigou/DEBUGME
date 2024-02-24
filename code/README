@@ -1,0 +1,16 @@
+What is this:
+	- Messy code which capitalize the first argument
+
+The bug:
+	- The letter 'z' is missing when we check if a char is lowercase
+
+The debug:
+22c22
+< 		if (s[i] > 0x60 && s[i] < 0x7A)
+---
+> 		if (s[i] > 0x60 && s[i] < 0x7B)
+
+Remarks:
+	- Even if the code is messy, there is no other bug
+	- Messy code makes it hard to understand -> Level3
+	- The use of the terrible filename 'code.c' is intentional

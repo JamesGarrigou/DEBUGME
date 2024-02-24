@@ -1,0 +1,16 @@
+What is this:
+	- Program outputing each c_i character n_i times for a string "n_0c_0...n_kc_k"
+	- Example:
+	$> ./a.out 3P0d35a4.
+	$> PPPaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa....
+
+The bug:
+	- The end of the output string is unitialized
+
+The debug:
+83a84
+> 	output[j] = '\0';
+
+Remarks:
+	- The program seems to work because an unitialized byte is often read as 0
+	- As simple as it seemed, this bug is really hard to find if the pisciner doesn't have the reflex to use valgrind -> Level4
